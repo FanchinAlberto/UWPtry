@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="UWPtry.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPtry"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Width="500" Margin="500,10,500,0" x:Name="Panel">
+            <TextBlock TextWrapping="Wrap" Text="ESERCIZIO 1" TextAlignment="Center"/>
+            <TextBlock TextWrapping="Wrap" Text="Inserire il proprio nome" Margin="0,50,0,0" HorizontalAlignment="Center"/>
+            <TextBox x:Name="tbxName" TextWrapping="Wrap" Text="" PlaceholderText="Nome" Margin="0,30,0,0" Width="372"/>
+            <TextBlock x:Name="txtResult" TextWrapping="Wrap" Text="" Margin="0,30,0,0" HorizontalAlignment="Center"/>
+            <Button x:Name="btnChangePage" Content="PROSEGUI" Margin="0,30,0,0" HorizontalAlignment="Center" Click="btnChangePage_Click"/>
+            
+
+        </StackPanel>
+        <Frame x:Name="FrameNavigate" Margin="10,10,0,0">
+            
+        </Frame>
+    </Grid>
+</Page>
